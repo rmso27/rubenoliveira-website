@@ -33,8 +33,23 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
+
 .highlight {
-    color: var(--pink);
+    padding: 0.5rem;
+    background-color: var(--pink);
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
 }
 
 /* Header */
@@ -66,7 +81,7 @@ header a {
 }
 
 @media (max-width: 580px) {
-    .header {
+    header {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -86,7 +101,7 @@ header a {
 
 /* Hero */
 .hero {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,11 +109,13 @@ header a {
     background-color: var(--purple);
 }
 
-.hero img {
-    width: 400px;
-    border-radius: 10px;
+.hero-content {
+    width: 50%;
+    text-align: left;
 }
 
-.hero-content {
-    text-align: left;
+@media (max-width: 580px) {
+    .hero-content {
+        width: 80%;
+    }
 }
