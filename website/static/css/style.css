@@ -37,9 +37,21 @@ h2 {
     font-size: 1.5rem;
 }
 
-.highlight {
+h3 {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+/* .highlight {
     padding: 0.5rem;
     background-color: var(--pink);
+} */
+
+.highlight {
+    background-image: linear-gradient(45deg, var(--yellow), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 580px) {
@@ -50,6 +62,10 @@ h2 {
     h2 {
         font-size: 1rem;
     }
+
+    h3 {
+        font-size: 0.6rem;
+    }
 }
 
 /* Header */
@@ -58,7 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--purple);
-    border-bottom: 4px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
 }
 
 header a {
@@ -101,7 +117,7 @@ header a {
 
 /* Hero */
 .hero {
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +128,27 @@ header a {
 .hero-content {
     width: 50%;
     text-align: left;
+}
+
+.hero-content-social {
+    padding-top: 2rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content-social-links {
+    padding-top: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hero-content-social-links svg {
+    height: 3vh;
+    fill: var(--blue);
 }
 
 @media (max-width: 580px) {
